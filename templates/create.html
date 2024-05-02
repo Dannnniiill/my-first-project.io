@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Создать заказ</title>
+</head>
+<body>
+    <h1>Создать заказ</h1>
+    <form action="{{ url_for('create_order') }}" method="post">
+        <label for="supplier">Поставщик:</label>
+        <input type="text" name="supplier" id="supplier"><br>
+        <label for="material">Материал:</label>
+        <input type="text" name="material" id="material"><br>
+        <label for="quantity_kg">Количество (кг):</label>
+        <input type="text" name="quantity_kg" id="quantity_kg"><br>
+        <label for="date">Дата:</label>
+        <input type="text" name="date" id="date" placeholder="ГГГГ-ММ-ДД"><br>
+        <button type="submit">Создать заказ</button>
+    </form>
+</body>
+</html>
